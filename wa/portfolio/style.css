@@ -40,6 +40,12 @@ a:visited{
 p{
     font-family:"IBM Plex Mono", monospace;
 }
+a{
+    font-family:"IBM Plex Mono", monospace;
+}
+ul{
+    font-family:"IBM Plex Mono", monospace;
+}
 h1{
     font-family: "Tiny5", sans-serif;
     font-weight: 400;
@@ -60,6 +66,11 @@ h3{
     font-style: normal;
     font-size:32px;
     color:#AFFC41;
+}
+.gallery{
+    width:500px;
+    padding:20px;
+    background-color:white;
 }
 footer{
     font-family: "Tiny5", sans-serif;
