@@ -11,31 +11,32 @@
 
 html{
     padding:40px;
-    background-color:#086375;
+    background-color:#00334F;
     color:white;
 }
 nav{
     font-family: "Tiny5", sans-serif;
     font-size:24px;
     text-decoration:none;
+    display:flex;
 }
 .navlink{
-    width:200px;
+    width:240px;
     background-color:#3C1642;
-    padding:20px;
+    padding:10px;
 }
 .navlink:hover{
     background-color:black;
 }
 a{
-    text-decoration:none;
-    color:#1DD3B0
+    text-decoration:underline;
+    color:#53FFEE
 }
 a:hover{
     color:#AFFC41;
 }
 a:visited{
-    color:#FF8B81;
+    color:#FFA8A3;
 }
 p{
     font-family:"IBM Plex Mono", monospace;
@@ -74,6 +75,6 @@ h3{
 }
 footer{
     font-family: "Tiny5", sans-serif;
-    color:#1DD3B0;
+    color:#53FFEE;
     padding:20px;
 }
