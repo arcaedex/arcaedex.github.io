@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5</title>
+
+    <style>
+        .card{
+            text-align:center;
+        }
+        .card-header{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items:center;
+            font-family:Helvetica, sans-serif;
+            gap:0rem;
+        }
+        h3{
+            background-color:lightgray;
+            text-align:center;
+            padding:10px;
+            width:10rem;
+            border-radius:20%;
+        }
+        .card-content{
+            display:none;
+            align-items: center;
+            justify-content: center;
+        }
+        button{
+            height:2rem;
+            width:2rem;
+            border-radius:50%;
+            border:2px black solid;
+        }
+        button:hover{
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    
+
+<div class="card">
+  <div class="card-header">
+    <h3>Community Garden Project</h3>
+    <button class="expand-btn" aria-label="Expand card">+</button>
+  </div>
+  <div class="card-content">
+    <p class="summary">Join neighbors in creating a shared growing space...</p>
+    <div class="details hidden">
+      <p>Meeting every Saturday at 10am. Tools provided. All skill levels welcome.</p>
+      <p>Contact: garden@community.org</p>
+    </div>
+  </div>
+</div>
+
+<script>
+    //javascript! needs to be at the bottom of the body
+    let info = false;
+
+    const expandBtn = document.querySelector('.expand-btn');
+    const details = document.querySelector('.card-content');
+
+    expandBtn.addEventListener('click', showInfo);
+    //when you hear a click, run function
+
+    function showInfo(){
+        //console.log("hi!");
+        //alert("this is an alert");
+
+        if (info == false){
+            details.style.display = 'flex';
+            info = true;
+        } else {
+            details.style.display = 'none';
+            info = false;
+        }
+    }
+</script>
+</body>
+</html>
