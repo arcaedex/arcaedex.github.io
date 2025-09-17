@@ -26,8 +26,11 @@
         }
         .card-content{
             display:none;
-            align-items: center;
-            justify-content: center;
+            flex-direction:column;
+            text-align:center;
+            align-content:center;
+            justify-content:center;
+            transition: display 2s;
         }
         button{
             height:2rem;
@@ -73,9 +76,13 @@
 
         if (info == false){
             details.style.display = 'flex';
+            document.querySelector('.expand-btn').textContent = '-';
+            document.querySelector('.expand-btn').setAttribute('aria-label', 'Close card')
             info = true;
         } else {
             details.style.display = 'none';
+            document.querySelector('.expand-btn').textContent = '+';
+            document.querySelector('.expand-btn').setAttribute('aria-label', 'Expand card')
             info = false;
         }
     }
