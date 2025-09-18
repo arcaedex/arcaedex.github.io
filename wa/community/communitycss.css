@@ -1,0 +1,52 @@
+.main-nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    background-color:antiquewhite;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-menu{
+    display:flex;
+    gap:2em;
+}
+
+.nav-toggle{
+    display:none;
+}
+
+@media screen and (max-width:768px){
+    .nav-toggle{
+        display:flex;
+        justify-content:center;
+        align-content:center;
+        align-self:center;
+        flex-direction:column;
+        border-radius:20%;
+    }
+    .hamburger{
+        background-color:black;
+        height: 6px;
+        width:40px;
+        padding: 0;
+        margin: 3px;
+    }
+    .nav-toggle:hover{
+        background-color:white;
+    }
+
+    .nav-menu.hide{
+        display:none;
+    }
+
+    .nav-menu.show{
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        height: 200px;
+        width: 150px;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+}
