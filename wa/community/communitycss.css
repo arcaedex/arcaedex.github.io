@@ -1,14 +1,30 @@
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+    font-size:70%;
+}
 .main-nav{
     display:flex;
     justify-content:space-between;
-    padding:20px;
-    background-color:antiquewhite;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:10px;
+    background-color:rgb(255, 187, 187);
+    font-family: "Lilita One", sans-serif;
+    font-size:20px;
 }
 
 .nav-menu{
     display:flex;
     gap:2em;
+    font-size:10px;
+}
+
+.nav-menu a{
+    color:brown;
+    text-decoration:none;
 }
 
 .nav-toggle{
@@ -21,15 +37,16 @@
         justify-content:center;
         align-content:center;
         align-self:center;
-        flex-direction:column;
+        flex-direction:row;
         border-radius:20%;
     }
     .hamburger{
         background-color:black;
         height: 6px;
-        width:40px;
+        width:6px;
         padding: 0;
         margin: 3px;
+        border-radius:50%;
     }
     .nav-toggle:hover{
         background-color:white;
@@ -41,12 +58,35 @@
 
     .nav-menu.show{
         position: absolute;
-        top: 90px;
+        top: 10%;
         right: 0px;
-        height: 200px;
-        width: 150px;
+        height: 30%;
+        width: 15%;
         flex-direction: column;
-        justify-content: center;
+        justify-content:center;
+        text-align:left;
+        align-content: left;
+        background-color:brown;
+        color:bisque;
 
+    }
+    .nav-menu.show a{
+        color:bisque;
+        text-decoration:none;
+    }
+
+    .nav-menu.show a:visited{
+        color:burlywood;
+    }
+
+    h1{
+        position:right;
+        width:70%;
+        padding:10px;
+    }
+
+    p{
+        width:65%;
+        padding:10px;
     }
 }
