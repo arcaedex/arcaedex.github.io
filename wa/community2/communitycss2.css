@@ -23,9 +23,13 @@ html{
     font-size:10px;
 }
 
-.nav-menu a{
+.navlink a{
     color:brown;
     text-decoration:none;
+}
+
+.navlink a:visited{
+    color:burlywood;
 }
 
 .nav-toggle{
@@ -94,12 +98,21 @@ html{
 
 .homediv{
     display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
     grid-template-areas:
             "landing image1"
-            "resources events"
-            "documentation external";
+            "resources alerts"
+            "documentation guestbook";
     gap: 1rem;
 
+}
+.intro{
+    grid-area:landing;
+}
+.resourcesintro{
+    grid-area:resources;
+    
 }
 .antsrep{
     grid-area:image1;
@@ -107,10 +120,77 @@ html{
     display:flex;
     width:300px;
 }
+.documentation{
+    grid-area:documentation;
+}
+.namebook{
+    grid-area:guestbook;
+    display:block;
+    padding-top: 100px;
+    justify-self:right;
+}
+
+.resourcecontainer{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header buttons"
+    "weather poison"
+    "globalmap more";
+    gap:10px;
+}
+.resourceHeader{
+    grid-area:header;
+    justify-self:right;
+    padding:10px;
+}
+.resourceButton{
+    grid-area: buttons;
+    justify-self:left;
+    padding:10px;
+}
+.resource-card{
+    background-color:rgb(255, 220, 206);
+    display:block;
+    padding:10px;
+    height:100px;
+}
+#weatherCard{
+    grid-area:weather;
+}
+#moreCard{
+    grid-area:more;
+}
+#poisonCard{
+    grid-area:poison;
+}
+#globeCard{
+    grid-area:globalmap;
+}
+
+/* non-class/id, general portions */
 img{
     width:100%;
     height:100%;
 }
-.documentation{
-    grid-area:documentation;
+a{
+    text-decoration:underline;
+    color:rgb(167, 0, 0);
+}
+a:hover{
+    color:red;
+}
+a:visited{
+    color:rgb(100, 53, 0);
+}
+
+button{
+    text-decoration:none;
+    background-color:rgb(250, 215, 215);
+    border:red 2px dotted;
+    border-radius:20%;
+}
+button:active{
+    background-color:rgb(255, 117, 117);
 }

@@ -21,10 +21,10 @@
         <span class="hamburger"></span>
       </button>
       <ul class="nav-menu hide">
-        <li><a href="../community2/community2.html">HOMEHILL</a></li>
-        <li><a href="../community2/community2resources.html">RESOURCES</a></li>
-        <li><a href="#alerts">ALERTS</a></li>
-        <li><a href="#help">HELP</a></li>
+        <li><a class="navlink" href="../community2/community2.html">HOMEHILL</a></li>
+        <li><a class="navlink" href="../community2/community2resources.html">RESOURCES</a></li>
+        <li><a class="navlink" href="#alerts">ALERTS</a></li>
+        <li><a class="navlink" href="#help">HELP</a></li>
       </ul>
 </nav>
 <div class="homediv">
@@ -38,18 +38,29 @@
   <div class="antsrep">
             <img src="../ants.jpg" alt="some ants working together" class="antsimgmain">
         </div>
+
+  <section class="resourcesintro">
+    <h1>RESOURCE INFO</h1>
+    <p>Looking to support your colony? There's plenty of places to start over on the
+    <a href="../community2/community2resources.html"> Resources Page</a> </p>
+
+  </section>
+
   <section class="documentation">
-    <h1>For The Big Ant That Grades Homework:</h1>
-    <p>DOCUMENTATION! You may have noticed the text is kind of small... it was difficult to figure out how to accomodate for ants while still being legible for people.
-    It's also fairly important to keep the website keyboard friendly because while ants might get small keyboards, I don't think they have small mice.
-    Based on testing, I wanted the hamburger menu to be a kebab instead for discernability, and when I have more text I want to figure out how to change the menu flexbox to flex a little differently but I'm not sure how yet.
+    <h1>WEBSITE DOCUMENTATION LOG:</h1>
+    <p>
+      Based on both feedback and mobile testing, I made the image try to resize more normally for smaller screens
+      rather than just one size. I was also told that if someone was an ant they'd like the dotted border on a button
+      instead of dashed or solid, because it'd look like crumbs. I also asked a couple ants on
+      their thoughts but they just kept hauling pebbles.
     </p>
   </section>
+  <div class="namebook">
+  <label for="guestbookentry" class="guestbook">Sign the guestbook!
+  <input type="text" id="guestname" name="guestbookentry" value="">
+  <input type="submit" id="guestnameButton" value="Submit"><br>
+  <p id="book"></p>
 </div>
-
-
-<script>
-
-</script>
+</div>
 </body>
 </html>
