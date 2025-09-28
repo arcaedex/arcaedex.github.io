@@ -31,9 +31,9 @@ document.getElementById('guestnameButton').addEventListener("click", signBook);
 function signBook(){
     let nameInput = document.getElementById('guestname').value;
     if (nameInput === ""){
-        document.getElementById("book").innerHTML = "You didn't put anything in, silly!";
+        document.getElementById("book").textContent = "You didn't put anything in, silly!";
     } else {
-document.getElementById("book").innerHTML = "Thanks for signing, " + nameInput + "!";
+document.getElementById("book").textContent = "Thanks for signing, " + nameInput + "!";
     }
 }
 
