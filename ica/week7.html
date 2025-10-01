@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 ICA</title>
+    <style>
+        .dark{
+            background-color:rgb(50, 50, 109);
+            color:white;
+        }
+
+        .light{
+            background-color:rgb(198, 219, 255);
+            color:black;
+        }
+        button{
+            border-radius:30%;
+            padding:5%
+        }
+
+    </style>
+</head>
+<body>
+    <button id="theme" type="button"> THEME </button>
+
+    <div>
+        <h1>Documenting my Choice</h1>
+        <p>I implemented the theme option, both because it seems most relevant to what
+            I want to pursue with my own website design, and because it's what we did in class.
+            This means users can personalize their experience more, particularly if they don't 
+            do well with bright or dim lights. I'm storing a user's theme choice.
+        </p>
+
+        <h1>Individual Reflection</h1>
+        <p>I discovered that I would really prefer my text to appropriately scale, now, and
+            I'm still not entirely sure how to implement that but I didn't even know that was a thing
+            I could do before. Which seems silly in hindsight of course, but it would be so helpful.
+            My localstorage feature better lets users choose if they want a brighter theme or dimmer theme 
+            and this just seems nice overall to have. I didn't really know even themes could be nefarious,
+            but I was aware that many websites these days collect so much data. It seems like every website I 
+            go on these days won't let you opt out of cookies. For my community I think my ants would 
+            be very worried about what data can or cannot be used against them because ants are always at war.
+        </p>
+        <p>Code snippet: inspect me. I store theme choice, which is important for customization of experience, and the user can press the button to change their theme.</p>
+    </div>
+
+<script>
+//button
+let btn = document.querySelector('#theme').addEventListener('click',theme);
+
+function theme(){
+    //console.log("theme works");
+    let currentTheme = localStorage.getItem('userTheme')
+    setTheme(currentTheme);
+}
+
+// Save user's theme choice
+function setTheme(theme) {
+    let inTheme = theme;
+    if(inTheme=='dark') {
+        theme = 'light';
+    } else {
+        theme = 'dark';
+    }
+    localStorage.setItem('userTheme', theme);
+    document.body.className = theme;
+}
+
+// Load saved theme on page load
+window.addEventListener('load', function() {
+    const savedTheme = localStorage.getItem('userTheme') || 'light';
+    document.body.className = savedTheme;
+});
+</script>
+</body>
+</html>
+
+<!-- aaaaa-->
