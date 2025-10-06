@@ -1,0 +1,362 @@
+.lilita-one-regular {
+  font-family: "Lilita One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+    font-size:70%;
+}
+
+.dark{
+            background-color:rgb(74, 42, 35);
+            color:white;
+
+}
+.light{
+            background-color:rgb(228, 206, 198);
+            color:black;
+}
+
+#popup{
+    background-color:white;
+    color:black;
+    font-size:120%;
+    display:block;
+}
+
+.main-nav{
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    background-color:rgb(255, 121, 121);
+    font-family: "Lilita One", sans-serif;
+    font-size:20px;
+}
+
+.nav-menu{
+    display:flex;
+    gap:2rem;
+    font-size:10px;
+}
+
+.navlink a{
+    color:brown;
+    text-decoration:none;
+}
+
+.navlink a:visited{
+    color:burlywood;
+}
+
+.nav-toggle{
+    display:none;
+}
+/* PHONE */
+@media screen and (max-width:375px){
+    .nav-toggle{
+        display:flex;
+        justify-content:center;
+        align-content:center;
+        align-self:center;
+        flex-direction:row;
+        border-radius:20%;
+    }
+    .hamburger{
+        background-color:black; /* test */
+        height:10px;
+        width:10px;
+        padding: 0;
+        margin: 0.3rem;
+        border-radius:50%;
+    }
+    .nav-toggle:hover{
+        background-color:white;
+    }
+
+    .nav-menu.hide{
+        display:none;
+    }
+
+    .nav-menu.show{
+        position: absolute;
+        top: 10%;
+        right: 0px;
+        height: 30%;
+        width: 15%;
+        flex-direction: column;
+        justify-content:center;
+        text-align:left;
+        align-content: left;
+        background-color:brown;
+        color:bisque;
+
+    }
+    .nav-menu.show a{
+        color:bisque;
+        text-decoration:none;
+    }
+
+    .nav-menu.show a:visited{
+        color:burlywood;
+    }
+
+    h1{
+        width:70%;
+        padding:10px;
+    }
+
+    p{
+        width:65%;
+        padding:10px;
+    }
+
+    .homediv{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+            "landing"
+            "image1"
+            "resources"
+            "alerts"
+            "documentation"
+            "guestbook";
+    gap: 1rem;
+
+}
+.resourcecontainer{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "buttons"
+    "weather"
+    "poison"
+    "globalmap"
+    "more";
+    gap:10px;
+}
+}
+
+/* TABLET */
+@media screen and (max-width:768px) and (min-width:376px){
+    .nav-toggle{
+        display:flex;
+        justify-content:center;
+        align-content:center;
+        align-self:center;
+        flex-direction:row;
+        border-radius:20%;
+    }
+    .hamburger{
+        background-color:black;
+        height: 6px;
+        width:6px;
+        padding: 0;
+        margin: 3px;
+        border-radius:50%;
+    }
+    .nav-toggle:hover{
+        background-color:white;
+    }
+
+    .nav-menu.hide{
+        display:none;
+    }
+
+    .nav-menu.show{
+        position: absolute;
+        top: 10%;
+        right: 0px;
+        height: 30%;
+        width: 15%;
+        flex-direction: column;
+        justify-content:center;
+        text-align:left;
+        align-content: left;
+        background-color:brown;
+        color:bisque;
+
+    }
+    .nav-menu.show a{
+        color:bisque;
+        text-decoration:none;
+    }
+
+    .nav-menu.show a:visited{
+        color:burlywood;
+    }
+
+    h1{
+        width:70%;
+        padding:10px;
+    }
+
+    p{
+        width:65%;
+        padding:10px;
+    }
+
+    .homediv{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-areas:
+            "landing image1"
+            "resources alerts"
+            "documentation guestbook";
+    gap: 1rem;
+}
+.resourcecontainer{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "buttons"
+    "weather"
+    "poison"
+    "globalmap"
+    "more";
+    gap:10px;
+}
+}
+
+/* DESKTOP */
+@media screen and (min-width:769px){
+
+    .nav-menu.show{
+        position: absolute;
+        top: 10%;
+        right: 0px;
+        height: 30%;
+        width: 15%;
+        flex-direction: column;
+        justify-content:center;
+        text-align:left;
+        align-content: left;
+        background-color:brown;
+        color:bisque;
+
+    }
+    .nav-menu.show a{
+        color:bisque;
+        text-decoration:none;
+    }
+
+    .nav-menu.show a:visited{
+        color:burlywood;
+    }
+
+    h1{
+        position:right;
+        width:70%;
+        padding:10px;
+    }
+
+    p{
+        width:65%;
+        padding:10px;
+    }
+
+    .homediv{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
+    grid-template-areas:
+            "landing image1"
+            "resources alerts"
+            "documentation guestbook";
+    gap: 1rem;
+}
+.resourcecontainer{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "header buttons"
+    "weather poison"
+    "globalmap more";
+    gap:10px;
+}
+}
+
+
+.intro{
+    grid-area:landing;
+}
+.resourcesintro{
+    grid-area:resources;
+    
+}
+.antsrep{
+    grid-area:image1;
+    padding:5px;
+    display:flex;
+    width:300px;
+}
+.documentation{
+    grid-area:documentation;
+}
+.namebook{
+    grid-area:guestbook;
+    display:block;
+    padding-top: 100px;
+    justify-self:right;
+}
+
+.resourceHeader{
+    grid-area:header;
+    justify-self:right;
+    padding:10px;
+}
+.resourceButton{
+    grid-area: buttons;
+    justify-self:left;
+    padding:10px;
+}
+.resource-card{
+    background-color:rgb(201, 159, 69);
+    display:block;
+    padding:10px;
+}
+#weatherCard{
+    grid-area:weather;
+}
+#moreCard{
+    grid-area:more;
+}
+#poisonCard{
+    grid-area:poison;
+}
+#globeCard{
+    grid-area:globalmap;
+}
+
+/* non-class/id, general portions */
+img{
+    width:100%;
+    height:100%;
+}
+a{
+    text-decoration:underline;
+    color:rgb(167, 0, 0);
+}
+a:hover{
+    color:red;
+}
+a:visited{
+    color:rgb(100, 53, 0);
+}
+
+button{
+    text-decoration:none;
+    background-color:rgb(250, 215, 215);
+    border:red 2px dotted;
+    border-radius:20%;
+}
+button:active{
+    background-color:rgb(255, 117, 117);
+}
