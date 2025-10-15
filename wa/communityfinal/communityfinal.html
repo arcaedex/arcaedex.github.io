@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTS WEB</title>
+    <link rel="stylesheet" href="communityfinalcss.css">
+    <script src="communityfinaljs.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAV: navigation-->
+    <nav>
+        <div id="nav-header">WORLD WIDE WEB FOR ANTS</div>
+        <!--mobile button-->
+        <button id="nav-toggle" aria-label="Open Navigation Menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
+        <!--nav menu-->
+        <ul id="nav-menu">
+            <li><a class="navlink" href="../communityfinal/communityfinal.html">HOMEHILL</a></li>
+            <li><a class="navlink" href="../communityfinal/communityfinalresources.html">RESOURCES</a></li>
+            <li><a class="navlink" href="../communityfinal/communityfinalalerts.html">ALERTS</a></li>
+        </ul>
+
+        <div class="display-image"><img src="../communityfinal/antIcon.png" alt="a cartoonish ant" id="nav-icon"></div>
+    </nav>
+
+    <div class="main-content-home">
+
+        <!--MAIN: landing post-->
+        <section class="home-content" id="landing-text">
+            <h1>ANT NETWORK</h1>
+            <p>This is a website for ants, or ant enthusiasts! Once all ants understand how to use the internet,
+                the world will be very different. So they need a website. This site intends to collect useful information
+                in this endeavor, be it the helpful resources page or the alert updates! If you aren't an ant, you could be.
+            </p>
+        </section>
+
+        <!--MAIN: landing image-->
+        <div class="display-image" id="landing-image"><img src="../communityfinal/loneAnt.jpg" alt="an ant on a log" id="dividerimg"></div>
+
+        <!--MAIN: resources forward-->
+        <section class="home-content" id="resources-forward">
+            <h3>RESOURCE ZONE</h3>
+            <p>Looking to support your colony? There's plenty of places to start over on the
+            <a href="../communityfinal/communityfinalresources.html"> Resources Page</a>!</p>
+        </section>
+
+        <!--MAIN: divider image-->
+        <div class="display-image" id="divider-image"><img src="../communityfinal/antsClimb.jpg" alt="ants on a stem" id="dividerimg"></div>
+
+        <!--MAIN: alerts forward-->
+        <section class="home-content" id="alerts-forward">
+            <h3>ALERTS ZONE</h3>
+            <p>Hoping to catch up on any recent updates? The
+            <a href="../communityfinal/communityfinalalerts.html"> Alerts Page</a> has a log!</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <!--FOOTER: privacy statement, opt-out & sign-out-->
+        <div id="privacy-statement">This website uses localstorage to save your submitted 
+            information. By engaging with either the "I Understand" button, "theme" button or 
+            "username" input, the user consents to the storage of this data. This data is 
+            stored during the use of the website and is not shared.
+        </div>
+
+        <!--FOOTER: username-->
+        <div id="name-entry">
+            <div id="name-open">
+            <label class="namezone" id="nameentry">Enter name:
+            <input type="text" id="guestname" name="nameentry" value=""></label>
+            </div>
+            <div id="name-taken"></div>
+        </div>
+
+        <!--FOOTER: theme-->
+        <button id="theme-button" type="button"> Theme Toggle </button>
+
+    </footer>
+    
+</body>
+</html>

@@ -76,6 +76,7 @@ document.getElementById('popup').style.display = 'none';
 document.querySelector('#deleteData').addEventListener('click',clearCache());
 function clearCache(){
 localStorage.clear();
+console.log("clearCache ran");
 }
 
 //THEME

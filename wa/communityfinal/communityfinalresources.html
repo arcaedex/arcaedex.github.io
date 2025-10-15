@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTS WEB</title>
+    <link rel="stylesheet" href="communityfinalcss.css">
+    <script src="communityfinaljs.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAV: navigation-->
+    <nav>
+        <div id="nav-header">WORLD WIDE WEB FOR ANTS</div>
+        <!--mobile button-->
+        <button id="nav-toggle" aria-label="Open Navigation Menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
+        <!--nav menu-->
+        <ul id="nav-menu">
+            <li><a class="navlink" href="../communityfinal/communityfinal.html">HOMEHILL</a></li>
+            <li><a class="navlink" href="../communityfinal/communityfinalresources.html">RESOURCES</a></li>
+            <li><a class="navlink" href="../communityfinal/communityfinalalerts.html">ALERTS</a></li>
+        </ul>
+
+        <div class="display-image"><img src="../communityfinal/antIcon.png" alt="a cartoonish ant" id="nav-icon"></div>
+    </nav>
+
+    <div class="main-content-resource">
+        <!--MAIN: resource title-->
+        <div id="resource-blurb"><h1>RESOURCES</h1>
+        <p>If you're looking for informational places to go, this is the spot. An ant's best friend
+            is a tunnel and links are a bit like tunnels, so dig in! There are helpful filter buttons
+            if you're looking for a particular kind of resource.
+        </p></div>
+        <!--MAIN: buttons-->
+        <div id="resource-filter">
+            <button class="filter-button">All</button>
+            <button class="filter-button">Map</button>
+            <button class="filter-button">Document</button>
+        </div>
+        <!--MAIN: resource image-->
+        <div id="resource-image"><img src="../communityfinal/antsClimb.jpg" alt="ants on a stem" id="dividerimg"></div>
+        <!--MAIN: resource 1-->
+        <div class="resource-card" id="weathercard" data-category="map">
+            <h2>WEATHER</h2>
+    <p>Rain, sleet, and snow can cause drastic damage to tunnel infastructure! It's best to keep up with the weather, and you can do so over at <a href="https://weather.com/">the Weather Channel</a>.</p>
+        </div>
+        <!--MAIN: resource 2-->
+        <div class="resource-card" id="globecard" data-category="map">
+            <h2>GLOBAL MAPS</h2>
+    <p>If you're looking to learn more about your neighbors, but not sure where to start? <a href="https://antmaps.org/">Antmaps</a> covers much of the globe!</p>
+        </div>
+        <!--MAIN: resource 3-->
+        <div class="resource-card" id="poisoncard" data-category="document">
+            <h2>POISON INFO</h2>
+    <p>Sometimes something looks like food, but it isn't! Ensure your colony's safety by
+      learning the differences between what's safe and what's dangerous with this helpful <a href="https://en.wikipedia.org/wiki/Poison">Website on Poison</a>!
+    </p>
+        </div>
+        <!--MAIN: resource 4-->
+        <div class="resource-card" id="morecard" data-category="document">
+            <h2>MORE</h2>
+    <p>Want more resources on ants not listed here? Worry not! There's plenty to find over at <a href="https://ants.com/">Ants.com</a>!</p>
+        </div>
+    </div>
+
+    <footer>
+        <!--FOOTER: privacy statement, opt-out & sign-out-->
+        <div id="privacy-statement">This website uses localstorage to save your submitted 
+            information. By engaging with either the "I Understand" button, "theme" button or 
+            "username" input, the user consents to the storage of this data. This data is 
+            stored during the use of the website and is not shared.
+        </div>
+
+        <!--FOOTER: username-->
+        <div id="name-entry">
+            <div id="name-open">
+            <label class="namezone" id="nameentry">Enter name:
+            <input type="text" id="guestname" name="nameentry" value=""></label>
+            </div>
+            <div id="name-taken"></div>
+        </div>
+
+        <!--FOOTER: theme-->
+        <button id="theme-button" type="button"> Theme Toggle </button>
+
+    </footer>
+    
+</body>
+</html>

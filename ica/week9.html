@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*style stuff*/
+        /* .box{
+            height:200px;
+            width:200px;
+            border:5px black solid;
+            background-color:coral;
+            animation-name: moving-box;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-out; 
+            position: relative;
+        } */
+        /* @keyframes moving-box{
+            from{
+                left:0px;
+                top:0px;
+                background-color:coral;
+            }
+            25%{
+                left:500px;
+                top:0px;
+                background-color:orange;
+            }
+            50%{
+                left: 500px;
+                top:500px;
+                background-color:pink;
+            }
+            75%{
+                left: 0px;
+                top:500px;
+                background-color:red;
+            }
+            to{
+                left:0px;
+                top:0px;
+                background-color:coral;
+            }
+        } */
+        /* .another-box{
+            height:200px;
+            width:200px;
+            border:5px black solid;
+            background-color:aquamarine;
+            transition-property: width height;
+            transition-duration:1s;
+        } */
+        /* .another-box:hover{
+            width:400px;
+            height:400px;
+        } */
+    .loading-container{
+        position:absolute;
+        top:40%;
+        left:40%;
+    }
+    
+    .loading-bar{
+        height:30px;
+        width:200px;
+        border:10px black solid;
+        position:relative;
+
+    }
+    .loading-progress{
+        background-color:orange;
+        position:relative;
+        width:0px;
+        height:30px;
+        animation-name:progress-load;
+        animation-duration:4s;
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-in-out;
+    }
+    @keyframes progress-load{
+        from{
+            width:0px;
+            background-color:orange;
+        }
+        50%{
+            width:30px;
+            background-color:yellow;
+        }
+        90%{
+            width:200px;
+            background-color:green;
+        }
+        to{
+            width:200px;
+            background-color:white;
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <!-- <div class="box"></div>
+    <div class="another-box"></div> -->
+    <div class="loading-container">
+    <div class="loading-bar">
+    <div class="loading-progress"></div></div></div>
+    <script>
+        //script stuff
+    </script>
+</body>
+</html>

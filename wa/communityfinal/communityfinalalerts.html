@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTS WEB</title>
+    <link rel="stylesheet" href="communityfinalcss.css">
+    <script src="communityfinaljs.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAV: navigation-->
+    <nav>
+        <div id="nav-header">WORLD WIDE WEB FOR ANTS</div>
+        <!--mobile button-->
+        <button id="nav-toggle" aria-label="Open Navigation Menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+
+        <!--nav menu-->
+        <ul id="nav-menu">
+            <li><a class="navlink" href="../communityfinal/communityfinal.html">HOMEHILL</a></li>
+            <li><a class="navlink" href="../communityfinal/communityfinalresources.html">RESOURCES</a></li>
+            <li><a class="navlink" href="../communityfinal/communityfinalalerts.html">ALERTS</a></li>
+        </ul>
+
+        <div class="display-image"><img src="../communityfinal/antIcon.png" alt="a cartoonish ant" id="nav-icon"></div>
+    </nav>
+
+    <div class="main-content-alerts">
+        <!--MAIN: alerts title-->
+        <div id="alerts-title">
+            <h2>RECENT UPDATES:</h2>
+        </div>
+        <!--MAIN: alert 1-->
+        <div class="alert-post"><b>REFLECTION!</b> 10-14-2025: For this assignment I did end up restarting from scratch because the previous version had become such a tangle that trying to optimize it was demoralizing and it was also Ugly. So basically I’ve got a new shiny website for ants. Unfortunately ants can’t use the internet quite yet so I’ve just got a website for ant enthusiasts or people who pretend to be ants in a colony, which crops up surprisingly often (see: pretend-to-be-ants-in-a-colony facebook group). It’s also something I’d like to tote around as one of my first websites for my friends. I implemented a filter function on my resources page in order to filter between map sites and document sites, and I also implemented a name input box that greets the user via continuous storage space. I did these things because they sounded interesting and stuff I’d gotten to scratch at the surface of previously in a recitation. For my community the filter function gives insight into what a particular link will contain, and the name entry is for personality because the group that inspired this website is all about the fun details of stuff. If I’m making a website for a goofy group of people it’s going to have goofy elements. My site has a privacy notice that is ever-present in the footer and explains what data is collected and how it gets used and also sets up button engagement rules. I’m going to be honest with you I also intended to have a button that let the user clear the data they had accrued but I could not for the life of me figure out why implementing that button would break the theme. And it was only a button so I just scrapped it (it works in my earlier iteration of the community website, but for whatever reason it breaks here). I put a lot of effort into making sure my colors contrasted enough to fit the accessibility criteria on both theme versions. I cleaned up statement errors by testing in the validator and checking the inspect developer console. I think the most challenging thing was starting over from scratch and it necessitated an extension request but I think it looks a lot better. It felt better to work with because I set myself up with better organization tools via comments in my code and sketching out the visuals of the website before starting. I also did a lot more pseudo code so I didn’t go off on weird winding tangents as much. I think I got a lot better at this sort of organization in addition to becoming more familiar with the code I was writing. As a side note I DEFINITELY got better at employing the input box and using local storage there to save the name. If I had more time and resources I would implement more on the resources and alerts pages, as well as trying to revisit whatever the error was with the clearing data button.</div>
+        <!--MAIN: alert 2-->
+        <div class="alert-post"><b>WELCOME, ANTS!</b> This website has been created!</div>
+    </div>
+
+    <footer>
+        <!--FOOTER: privacy statement, opt-out & sign-out-->
+        <div id="privacy-statement">This website uses localstorage to save your submitted 
+            information. By engaging with either the "I Understand" button, "theme" button or 
+            "username" input, the user consents to the storage of this data. This data is 
+            stored during the use of the website and is not shared.
+        </div>
+
+        <!--FOOTER: username-->
+        <div id="name-entry">
+            <div id="name-open">
+            <label class="namezone" id="nameentry">Enter name:
+            <input type="text" id="guestname" name="nameentry" value=""></label>
+            </div>
+            <div id="name-taken"></div>
+        </div>
+
+        <!--FOOTER: theme-->
+        <button id="theme-button" type="button"> Theme Toggle </button>
+
+    </footer>
+    
+</body>
+</html>
