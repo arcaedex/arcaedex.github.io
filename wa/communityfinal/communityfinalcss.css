@@ -38,7 +38,7 @@ footer{
     height:30px;
     width:30px;
 }
-#dividerimg{
+.dividerimg{
     height:50vh;
     width:auto;
     border-radius:12px;
