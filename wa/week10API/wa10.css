@@ -22,7 +22,6 @@ html {
     transform: translate(-50%, -50%);
     width: 600px;
     background-color: rgb(67, 67, 67);
-    border-radius: 5px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
   }
   
@@ -46,8 +45,7 @@ html {
   .button {
     display: block;
     color: white;
-    border-radius: 4px;
-    border: none;
+    border-color: rgb(178, 178, 178);
     padding: 10px 20px;
     cursor: pointer;
     text-align: center;
@@ -130,4 +128,19 @@ html {
     .app {
       width: 100%;
     }
+  }
+
+  .reflection{
+    display:flex;
+    padding:10px;
+    color:lightgrey;
+
+    a{
+      color:lightskyblue;
+    }
+
+    a:visited{
+      color:orchid;
+    }
+
   }
