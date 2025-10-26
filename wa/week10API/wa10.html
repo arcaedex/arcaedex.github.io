@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wa10.css">
+    <title>Palette Noise</title>
+</head>
+<body>
+    <!-- PLAN: user presses a color button and it generates a noisy color palette -->
+    <!-- thanks to https://colormagic.app/api/?ref=public_apis&utm_medium=website for palettes-->
+    <!-- thanks to https://php-noise.com/?ref=public_apis&utm_medium=website for noise colors-->
+    <div class="app">
+        <header>Noisy Color Palettes</header>
+        <section class="controls" >
+          <button type="button" id="red-button" class="color-button button">
+            Red
+          </button>
+          <button type="button" id="orange-button" class="color-button button">
+            Orange
+          </button>
+          <button type="button" id="yellow-button" class="color-button button">
+            Yellow
+          </button>
+          <button type="button" id="green-button" class="color-button button">
+            Green
+          </button>
+          <button type="button" id="blue-button" class="color-button button">
+            Blue
+          </button>
+          <button type="button" id="purple-button" class="color-button button">
+            Purple
+          </button>
+          <button type="button" id="pink-button" class="color-button button">
+            Pink
+          </button>
+          <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
+        </section>
+          <div class="colorholder" id="group-color-holder">
+            <img class="color-square" id="color-one" src="https://php-noise.com/noise.php?hex=$000000&json" width="100" alt="colored square with noise">
+            <img class="color-square" id="color-two" src="https://php-noise.com/noise.php?hex=$000000&json" width="100" alt="colored square with noise">
+            <img class="color-square" id="color-three" src="https://php-noise.com/noise.php?hex=$000000&json" width="100" alt="colored square with noise">
+            <img class="color-square" id="color-four" src="https://php-noise.com/noise.php?hex=$000000&json" width="100" alt="colored square with noise">
+            <img class="color-square" id="color-five" src="https://php-noise.com/noise.php?hex=$000000&json" width="100" alt="colored square with noise">
+          </div>
+      </div>
+      <script src="wa10.js"></script>
+</body>
+</html>
