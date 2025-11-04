@@ -49,11 +49,11 @@ function movieSearch(){
 }
 
 // http://www.omdbapi.com/?t=jurassic+park&apikey=e7a20d47 TEST
-let fetchpoint = "http://www.omdbapi.com/?t=jurassic+park&apikey=e7a20d47";
+let fetchpoint = "https://www.omdbapi.com/?t=jurassic+park&apikey=e7a20d47";
 
 async function findMovie(search) {
     //console.log("Success");
-    fetchpoint = "http://www.omdbapi.com/?t="+search+"&apikey=e7a20d47";
+    fetchpoint = "https://www.omdbapi.com/?t="+search+"&apikey=e7a20d47";
     try {
         const response = await fetch(fetchpoint); //we are trying to make a new variable (response)
         //while we wait for fetch to get endpoint
