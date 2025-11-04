@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="wa11.css">
+  <title>Movie Watchlist</title>
+</head>
+<body>
+  <div id="content">
+    <h1>Your Movie List:</h1>
+    <div id="searchdiv">
+      <label for="searchbar">Add Movie:</label>
+      <input type="text" id="searchbar" class="input" onsearch="movieSearch()" placeholder="Search...">
+    </div> 
+    <div id="curatedcontainer">
+      <div id="buttonscontainer">
+        <button type="button" id="clearbtn">Clear List</button>
+        <button type="button" id="exportbtn">Export Savedata</button>
+      </div>
+      <ul id="movielist">
+      </ul>
+    </div>
+  </div>
+  <!-- SCRIPT HERE -->
+  <script src="wa11.js"></script>
+</body>
+</html>

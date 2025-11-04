@@ -1,0 +1,24 @@
+#content{
+    position: absolute;
+    padding:10px;
+    top: 20%;
+    left: 40%;
+    background-color:rgb(255, 243, 150);
+}
+
+#buttonscontainer{
+    display:flex;
+    justify-content:right;
+}
+
+li{
+    margin-left:-20%;
+    padding:5px;
+    list-style-type:none;
+    background-color:rgb(255, 211, 123);
+    text-align:center;
+}
+li:hover{
+    background-color:rgb(255, 226, 5);
+    border: solid 2px  rgb(255, 145, 0);
+}
