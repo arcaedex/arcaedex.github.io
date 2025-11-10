@@ -1,0 +1,90 @@
+#content{
+    position:absolute;
+    background-color:rgb(255, 243, 150);
+}
+
+li{
+    list-style-type:none;
+    background-color:rgb(255, 211, 123);
+    text-align:center;
+}
+li:hover{
+    background-color:rgb(255, 226, 5);
+    border: solid 2px  rgb(255, 145, 0);
+    .runtime{
+        background-color:rgb(255, 226, 5);
+    }
+    .runtime:hover{
+        border:none;
+    }
+}
+
+/*__DESKTOP__*/
+@media screen and (min-width:769px){
+    #content{
+        padding:10px;
+        top: 20%;
+        left: 40%;
+    }
+    #buttonscontainer{
+    display:flex;
+    justify-content:right;
+    }
+    li{
+        margin-left:-20%;
+        padding:5px;
+    }
+    .runtime{
+        display:block;
+        margin-left:15%;
+        width:60%;
+        font-size: 0.8rem;
+    }
+}
+/*__TABLET__*/
+@media screen and (max-width:768px) and (min-width:376px){
+    #content{
+        padding:10px;
+        top:20%;
+        left:25%;
+    }
+    #buttonscontainer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    li{
+        margin-left:-20%;
+        padding:5px;
+    }
+    .runtime{
+        display:block;
+        margin-left:15%;
+        width:60%;
+        font-size: 0.8rem;
+    }
+}
+/*__PHONE__*/
+@media screen and (max-width:375px){
+    #content{
+        padding:10px;
+        top:15%;
+        left:0%;
+        width:100%;
+    }
+    #buttonscontainer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    li{
+        margin-left:-20%;
+        padding:5px;
+    }
+    .runtime{
+        display:block;
+        margin-left:15%;
+        width:60%;
+        font-size: 0.8rem;
+    }
+}
