@@ -1,0 +1,188 @@
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html{
+    background-color:rgb(10, 0, 26);
+    color:white;
+    font-family: "Bebas Neue", sans-serif;
+}
+#content{
+    display:grid;
+    grid-template-areas:"title, title" "search, buttons" "entries, entries";
+    background-color:rgb(81, 0, 0);
+
+    #titleheader{
+        grid-area: "title";
+    }
+    #searchdiv{
+        grid-area: "search";
+    }
+    #buttonscontainer{
+        grid-area: "buttons";
+    }
+    #moviescontainer{
+        grid-area: "entries";
+    }
+
+}
+
+.listing{
+    background-color:rgb(10, 0, 26);
+}
+.listing:hover{
+    animation-name:entry-hover;
+    animation-duration:0.2s;
+    animation-iteration-count:1;
+    animation-timing-function:ease-in;
+    background-color:rgb(127, 0, 0);
+    border:solid 2px rgb(255, 0, 60);
+}
+.runtime{
+    background-color:transparent;
+}
+.runtime:hover{
+    background-color:transparent;
+    border:none;
+}
+@keyframes entry-hover{
+        from{
+            background-color:rgb(10, 0, 26);
+            border:none;
+        }
+        50%{
+            border: 1px rgb(255, 0, 60);
+        }
+        to{
+            background-color:rgb(127, 0, 0);
+            border:solid 2px rgb(255, 0, 60);
+        }
+    }
+
+.listing{
+        display:block;
+    }
+
+/*__DESKTOP__*/
+@media screen and (min-width:769px){
+    #content{
+        padding:10px;
+        top: 20%;
+        left: 40%;
+    }
+    #buttonscontainer{
+    display:flex;
+    justify-content:right;
+    }
+    p{
+        padding:10px;
+        font-size:1.8rem;
+    }
+    .runtime{
+        display:block;
+        margin-left:15%;
+        width:60%;
+        font-size: 0.8rem;
+    }
+    .removebtn{
+    margin-left:80%;
+}
+.permabutton{
+    width:12%;
+    height:8%;
+    background-color:antiquewhite;
+    font-size:16px;
+    border-radius:10px;
+    padding-left:5px;
+}
+.removebtn{
+    width:40px;
+    height:40px;
+    border-radius:20px;
+    font-size:1.5rem;
+}
+}
+/*__TABLET__*/
+@media screen and (max-width:768px) and (min-width:376px){
+    #content{
+        padding:10px;
+        top:20%;
+        left:25%;
+    }
+    #buttonscontainer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    p{
+        
+        padding:5px;
+        font-size:1.4rem;
+    }
+    .runtime{
+        display:block;
+        margin-left:15%;
+        width:60%;
+        font-size: 0.8rem;
+    }
+    .removebtn{
+    margin-left:70%;
+}
+.permabutton{
+    width:22%;
+    height:8%;
+    background-color:antiquewhite;
+    font-size:16px;
+    border-radius:10px;
+    padding-left:5px;
+}
+.removebtn{
+    width:30px;
+    height:30px;
+    border-radius:20px;
+    font-size:1.2rem;
+}
+}
+/*__PHONE__*/
+@media screen and (max-width:375px){
+    #content{
+        padding:10px;
+        top:15%;
+        left:0%;
+        width:100%;
+    }
+    #buttonscontainer{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    p{
+        
+        padding:5px;
+    }
+    .runtime{
+        display:block;
+        margin-left:15%;
+        width:60%;
+        font-size: 0.8rem;
+    }
+    .removebtn{
+    margin-left:50%;
+}
+.permabutton{
+    width:32%;
+    height:8%;
+    background-color:antiquewhite;
+    font-size:16px;
+    border-radius:10px;
+    padding-left:5px;
+}
+.removebtn{
+    width:30px;
+    height:30px;
+    border-radius:20px;
+    font-size:1.2rem;
+}
+}

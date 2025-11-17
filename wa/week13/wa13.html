@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="wa13.css">
+  <title>Movie Watchlist</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section id="content">
+    <h1 class="header" id="titleheader">Your Movies:</h1>
+    <div id="searchdiv">
+      <label for="searchbar">Add Movie:</label>
+      <input type="text" id="searchbar" class="input" onsearch="movieSearch()" placeholder="Search...">
+    </div> 
+    <div id="curatedcontainer">
+      <div id="buttonscontainer">
+        <button type="button" class="permabutton" id="clearbtn" aria-label="Clear your list">Clear List</button>
+        <button type="button" class="permabutton" id="exportbtn" aria-label="Export your data">Export Savedata</button>
+      </div id="moviescontainer">
+      <div id="movielist">
+      </div>
+    </div>
+  </section>
+  <!-- SCRIPT HERE -->
+  <script src="wa13.js"></script>
+</body>
+</html>
