@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal Page 521</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+
+        .jim-nightshade-regular {
+            font-family: "Jim Nightshade", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p {
+            font-size: 18px;
+            font-family: "Jim Nightshade", cursive;
+            text-align: left;
+        }
+
+        .everything {
+            top: 0%;
+            left: 0%;
+        }
+
+        #pages {
+            position: relative;
+
+        }
+
+        .pagetext {
+            font-size: 1.2vw;
+            color: rgb(27, 21, 21);
+        }
+
+        .page1 {
+            position: absolute;
+            top: 5%;
+            left: 12%;
+            width: 20vw;
+            height: 20vw;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bgimage {
+            display: block;
+            width: 70%;
+            height: 70%;
+            padding: 10px;
+        }
+    </style>
+    <div class="everything">
+        <img class="bgimage" id="pages"
+            src="https://clipart-library.com/2023/Ancient_Open_Book_PNG_Transparent_Clipart.png" title="Journal..."
+            alt="open book">
+        <div class="page1">
+            <p class="pagetext" id="page1words"></p>
+        </div>
+        <div class="page2">
+            <p class="pagetext"> poage 2</p>
+        </div>
+    </div>
+    <script>
+        var i = 0;
+        var txt = "Sickness and Strangeness still dogs my steps. Tomorrow we will at last arrive in town for treatment with the good doctor, and aptly in time as I am soon to run out of bandages for my injury. And yet, I find hesitation. My companion Holen seems almost to slow her pace and fork her tongue as we approach, in such a way I have not known her to do before. Of the destination, of the doctor, of our better chances in Eeir... My fever might cloud my sense but I have thus far remained determined. I mustn't risk more time, nor harm to my dear Paisley. Still, something that disturbs even my enchanted compatriot begs caution. She has always had a terrible confidence about her, even a viciousness, but this tension in her countenance is unfamiliar. I overstep myself to imagine the change could have something to do with my state, rather than merely something directed at the place or perhaps even the doctor, yet I admit to finding even her goading presence welcome above listening to my own haggard breaths. As always, praise be the Lady Miriam, may dawn be light."; /* The text */
+        var speed = 20; /* The speed/duration of the effect in milliseconds */
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("page1words").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        window.onload = function() {
+            typeWriter();
+            };
+    </script>
+</body>
+
+</html>
+<!-- id 1:0:0 , class 0:1:0 tag 0:0:1 -->
