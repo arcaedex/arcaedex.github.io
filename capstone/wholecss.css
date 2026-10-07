@@ -1,0 +1,47 @@
+html{
+    background-color:black;
+    color:white;
+    font-size: 1.1rem;
+}
+
+
+
+/* CHARACTERS */
+
+.orange{
+    font-family: "Kanit", sans-serif;
+    color:rgb(255, 148, 0);
+    
+}
+.dov{
+    font-family: "Comic Neue", cursive;
+    color:rgb(81, 201, 255);
+    
+}
+.mercury{
+    font-family: "Bitter", serif;
+    color:rgb(189, 112, 184);
+    
+}
+.elk{
+    font-family: "Yatra One", system-ui;
+    color:rgb(173, 0, 0);
+    
+}
+.nuchal{
+    font-family: "Geist Mono", monospace;
+    color:rgb(79, 90, 37);
+    
+}
+.system{
+    font-family: "DotGothic16", sans-serif;
+    color:rgb(129, 129, 129);
+    
+}
+
+/* FONTS */
+.kanit-regular {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
