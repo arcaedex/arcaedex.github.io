@@ -4,7 +4,28 @@ html{
     font-size: 1.1rem;
 }
 
+/* STRUCTURE */
 
+.serverlog{
+    background-color:rgb(24, 24, 24);
+    padding:20px;
+    width:40%;
+    margin:30px 10px 10px 10px;
+}
+.menuButton{
+display:flex;
+padding:10px;
+margin: 10px 10px 10px 10px;
+width:200px;
+height:50px;
+text-align:center;
+justify-content:center;
+border-color: white;
+background-color:rgb(180, 180, 180);
+color:black;
+text-decoration:none;
+font-size:1.5em;
+}
 
 /* CHARACTERS */
 
@@ -36,7 +57,8 @@ html{
 .system{
     font-family: "DotGothic16", sans-serif;
     color:rgb(129, 129, 129);
-    
+    font-weight:bold;
+    font-size:1.1em;
 }
 
 /* FONTS */
