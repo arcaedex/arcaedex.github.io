@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKELETONKEY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DotGothic16&family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap" rel="stylesheet">
+    <style>
+        #typing{
+            border-right:solid white;
+            animation: blinker .90s step-end infinite;
+            white-space: nowrap;
+            width: max-content;
+        }
+        @keyframes blinker{
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+        }
+
+    </style>
     <link rel="stylesheet" href="wholecss.css">
 </head>
-<body>
-    <h1>BWOOM</h1>
+<body onload="typeWriter()">
+    <h1 >BWOOM</h1>
     <p> arhgghaghah THIS IS THE SKELETON KEY</p>
-    <p>this is a <a href="https://en.wikipedia.org/wiki/Win">link</a></p>
+    <p id="typing">Here's where I type text: </p>
+    <p>this is a <a href="index.html">link</a>, it goes back to index</p>
     <p title="hiiii">this is hovertext using title</p>
     <div class="card-content">
     <p> click this button to see more text and also the buttons text changes: <button class="expand-btn" aria-label="Expand card">CLICK</button></p>
@@ -30,6 +45,7 @@
         <p class="elk">elkh1d3: heyyyyy</p>
         <p class="mercury">MmercuryDroplett: Hello</p>
         <p class="nuchal">Nuchalspace: hi</p>
+        <p class="bgchar">Nobody: and I am also appearing in this film</p>
         </div>
 </body>
 </html>

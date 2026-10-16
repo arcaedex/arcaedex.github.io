@@ -9,8 +9,33 @@ html{
 .serverlog{
     background-color:rgb(24, 24, 24);
     padding:20px;
-    width:40%;
-    margin:30px 10px 10px 10px;
+    width:30vw;
+    margin:30px 20px 10px 20px;
+    grid-area:text;
+    border: solid rgb(153, 153, 153) 2px;
+}
+.standardLayout{
+    display: grid;
+    grid-template-areas: "text image";
+    grid-template-columns: [first] auto [line2] 60%;
+}
+.nextpageArrow{
+    position: absolute;
+    left:50%;
+    text-align:center;
+    bottom:30px;
+    a{
+        text-decoration:none;
+        color:white;
+        font-weight:bold;
+    }
+
+}
+.image{
+    background-color:rgb(41, 41, 41);
+    grid-area:image;
+    place-self:center;
+    margin:60px;
 }
 .menuButton{
 display:flex;
@@ -51,7 +76,7 @@ font-size:1.5em;
 }
 .nuchal{
     font-family: "Geist Mono", monospace;
-    color:rgb(79, 90, 37);
+    color:rgb(114, 124, 71);
     
 }
 .system{
@@ -59,6 +84,10 @@ font-size:1.5em;
     color:rgb(129, 129, 129);
     font-weight:bold;
     font-size:1.1em;
+}
+.bgchar{
+    font-family: Arial, sans-serif;
+    color:rgb(105, 105, 105);
 }
 
 /* FONTS */

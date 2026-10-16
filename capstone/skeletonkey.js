@@ -57,3 +57,16 @@ const textInputText2 = document.querySelector('.inputTextChange2');
             textInputText2.textContent = "you DIDNT type red!";
               }
         }
+
+//TYPE ON LOAD
+var i = 0;
+var typedtext = 'this is typed text! yahooie!';
+var typespeed = 100; //higher is slower
+
+function typeWriter() {
+  if (i < typedtext.length) {
+    document.getElementById("typing").innerHTML += typedtext.charAt(i);
+    i++;
+    setTimeout(typeWriter, typespeed);
+  }
+}
