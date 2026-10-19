@@ -9,21 +9,34 @@ html{
 .serverlog{
     background-color:rgb(24, 24, 24);
     padding:20px;
-    width:30vw;
+    
     margin:30px 20px 10px 20px;
     grid-area:text;
+    display:flex;
+    flex-direction:column;
     border: solid rgb(153, 153, 153) 2px;
+    height:fit-content;
+    a{
+        text-decoration:underline;
+        color:inherit;
+    }
 }
 .standardLayout{
     display: grid;
-    grid-template-areas: "text image";
+    grid: 100% 100%;
+    grid-template-areas: "text image" "arrow arrow";
     grid-template-columns: [first] auto [line2] 60%;
+    .serverlog{
+        width:30vw;
+    }
 }
 .nextpageArrow{
-    position: absolute;
-    left:50%;
+    position: relative;
     text-align:center;
-    bottom:30px;
+    bottom:0;
+    margin-bottom:10px;
+    padding:10px;
+    grid-area:arrow;
     a{
         text-decoration:none;
         color:white;
@@ -36,6 +49,9 @@ html{
     grid-area:image;
     place-self:center;
     margin:60px;
+}
+.extraimage{
+    background-color:rgb(41, 41, 41);
 }
 .menuButton{
 display:flex;
