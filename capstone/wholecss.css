@@ -23,7 +23,6 @@ html{
 }
 .standardLayout{
     display: grid;
-    grid: 100% 100%;
     grid-template-areas: "text image" "arrow arrow";
     grid-template-columns: [first] auto [line2] 60%;
     .serverlog{

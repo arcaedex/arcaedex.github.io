@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overwhelm</title>
+    <link rel="stylesheet" href="wholecss.css">
+    <style>
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DotGothic16&family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap" rel="stylesheet">
+</head>
+<body onload="speaking()">
+    <div class="content">
+        <div class="image" style="width:90%;height:130vh;">big image here. dramatic-like. the text is semi transparent so this image would be visible through it
+
+            <div class="serverlog" style="opacity:0.8;width:40%;margin-left:28%;margin-top:30%">
+                <p class="elk" id="step1">elkh1d3: </p>
+                <p class="elk" id="step2">elkh1d3: </p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p class="orange" id="step3">Orange35711: </p>
+                <p></p>
+                <p class="elk" id="step4">elkh1d3: </p>
+                <p class="nuchal" id="step5">Nuchalspace: </p>
+            </div>
+        </div>
+        <div class="nextpageArrow"><a href="index.html">==></a></div>
+    </div>
+    <script>
+        var i1 = 0;
+        var i2 = 0;
+        var i3 = 0;
+        var i4 = 0;
+        var i5 = 0;
+        var said1 = 'its too much';
+        var said2 = 'i just cant do it';
+        var said3 = 'but do you wanna be friends?';
+        var said4 = 'yeah';
+        var said5 = 'then we can figure it out';
+        var typespeed = 100; //higher is slower
+        var first = document.getElementById("step1").innerHTML;
+        var second = document.getElementById("step2").innerHTML;
+        var third = document.getElementById("step3").innerHTML;
+        var fifth = document.getElementById("step5").innerHTML;
+
+
+        function speaking(){
+            console.log("heyyy");
+            setTimeout(typeWriter1, 2000);
+            setTimeout(typeWriter2, 5000);
+            setTimeout(typeWriter3, 10000);
+            setTimeout(typeWriter4, 14000);
+            setTimeout(typeWriter5, 16000);
+        }
+        function typeWriter1() {
+            if (i1 < said1.length) {
+                document.getElementById("step1").innerHTML += said1.charAt(i1);
+                i1++;
+                setTimeout(typeWriter1, typespeed);
+            }
+        }
+        function typeWriter2() {
+            if (i2 < said2.length) {
+                document.getElementById("step2").innerHTML += said2.charAt(i2);
+                i2++;
+                setTimeout(typeWriter2, typespeed);
+            }
+        }
+        function typeWriter3() {
+            if (i3 < said3.length) {
+                document.getElementById("step3").innerHTML += said3.charAt(i3);
+                i3++;
+                setTimeout(typeWriter3, typespeed);
+            }
+        }
+        function typeWriter4() {
+            if (i4 < said4.length) {
+                document.getElementById("step4").innerHTML += said4.charAt(i4);
+                i4++;
+                setTimeout(typeWriter4, typespeed);
+            }
+        }
+        function typeWriter5() {
+            if (i5 < said5.length) {
+                document.getElementById("step5").innerHTML += said5.charAt(i5);
+                i5++;
+                setTimeout(typeWriter5, typespeed);
+            }
+        }
+        //stupid thing cant share
+    </script>
+</body>
+</html>
