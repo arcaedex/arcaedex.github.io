@@ -25,8 +25,35 @@
             <p class="dov">DOVdotcom: What's A Bootleg?</p>
             <p class="elk">elkh1d3: oh</p>
             <p class="elk">elkh1d3: like ummmm a ripoff</p>
+            <div class="cardcontent">
+                <p class="bgchar">j4ld91js0: TRADING cruel golden crown <button class="expand-btn">CLICKHERE</button></p>
+                <div class="buttonHidden" style="display:none;">
+                    <p class="bgchar">j4ld91js0: <a href="secret_ripoff.html">PRIVATE ROOM FOR TRADING</a></p>
+                </div>
+            </div>
         </div>
         <div class="nextpageArrow"><a href="8_hares.html">==></a></div>
     </div>
+    <script>
+        let info = false;
+
+        const expandBtn = document.querySelector('.expand-btn');
+        const details = document.querySelector('.buttonHidden');
+
+        expandBtn.addEventListener('click', showButtonInfo);
+
+        function showButtonInfo(){
+
+            if (info == false){
+                details.style.display = 'flex';
+                document.querySelector('.expand-btn').textContent = 'TRADING';
+                info = true;
+            } else {
+                details.style.display = 'none';
+                document.querySelector('.expand-btn').textContent = 'CLICKHERE';
+                info = false;
+            }
+        }
+    </script>
 </body>
 </html>
