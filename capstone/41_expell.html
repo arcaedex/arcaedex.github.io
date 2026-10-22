@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expell</title>
+    <link rel="stylesheet" href="wholecss.css">
+    <style>
+        .freakout{
+            display:absolute;
+        }
+        .fimage{
+            z-index:2;
+            position:absolute;
+            background-color:rgb(58, 58, 58);
+        }
+        .bimage{
+            z-index:-1;
+            position:absolute;
+        }
+        #textInput{
+            background-color:black;
+            padding:5px;
+            width:50%;
+            border: 0px;
+            color:rgb(189, 112, 184);
+            font:inherit;
+        }
+        #crash{
+            background-color:rgb(121, 121, 121);
+            padding:0px;
+            margin:0;
+            width:100%;
+            border: 0px;
+            z-index:3;
+            display:hidden;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=DotGothic16&family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yatra+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content freakout">
+        <div class="serverlog" style="width:35%;margin-left:30%;">
+            <p class="nuchal">Nuchalspace: woah hey</p>
+            <p class="nuchal">Nuchalspace: we can take a step back</p>
+            <p class="orange">Orange35711: no i want to get this right</p>
+            <p class="mercury">MmercuryDroplett: Yeah we can wait until you go up a couple grades</p>
+            <p class="elk">elkh1d3: ,,,</p>
+            <p class="orange">Orange35711: why are you being so mean to me</p>
+            <p class="mercury">MmercuryDroplett: I'm just joking around with you</p>
+            <p class="dov">DOVdotcom: Mercury Just Likes To Tease, It's Okay Orange</p>
+            <p class="nuchal">Nuchalspace: mercury you have been a bit harsh</p>
+            <p class="mercury">MmercuryDroplett: oh come on youre siding with the middlescooler?</p>
+            <p class="orange">Orange35711: theyre not nice jokes though they just suck</p>
+            <p class="orange">Orange35711: youre bad at telling jokes</p>
+            <p class="orange">Orange35711: youre bad at tellingjokes and you always think youte better than everyone else</p>
+            <p class="orange">Orange35711: but youre not!! youre juist being mean andf riends are supposed to helpother friends and be nice and</p>
+            <p class="orange">Orange35711: and cheer eachothert up </p>
+            <p class="dov">DOVdotcom: Orange It's Okay Just Calm Down For A Moment Ok</p>
+            <p class="orange">Orange35711: no!!! i want to say stuff!!!</p>
+            <p class="orange">Orange35711: dov youre partt of it too i fel like i mess up around you and you dont tellme what i did wrong you just get quiet and</p>
+            <p class="orange">Orange35711: and i dont knoww what i did wrong i just want to playthe game and have fun with my friends</p>
+            <p class="orange">Orange35711: abut i hang outwith you guys and it seemslike youre great friends and you always take dovs side even if were doingthe same things</p>
+            <p class="orange">Orange35711: and it makes me feel so bad and mad and im younger than you but you expect me to know everything but also you never think i know anything but i know some things!! i know that this doesnt feel right when you make those jokes it just feels likeyoure being a bully</p>
+            <p class="orange">Orange35711: and</p>
+            <p class="orange">Orange35711: so if i did something wrong or if you dont want to be friends thenyou have to TELL ME</p>
+            <p class="mercury">MmercuryDroplett: <input type="text" name="text" id ="textInput" placeholder="..."/> <span class="inputTextChange"></span></p>
+        </div>
+            <div class="image bimage" style="width:70%;height:80vh;top:10px;left:-20px;">back image</div>
+            <div class="image bimage" style="width:20%;height:40vh;top:120vh;left:70%;">back image</div>
+            <div class="image bimage" style="width:40%;height:50vh;top:140vh;left:0%;">back image</div>
+
+           <div class="image fimage" style="width:20%;height:20vh;top:-90px;left:10%;">front image</div> 
+           <div class="image fimage" style="width:35%;height:40vh;top:50vh;left:60%;">front image</div>
+           <div class="image fimage" style="width:35%;height:40vh;top:50vh;left:60%;">front image</div>
+           <div class="image fimage" style="width:25%;height:40vh;top:110vh;left:5%;">front image</div>
+    </div>
+    <script>
+        //INPUT ENTER
+    const textInputText = document.querySelector('.inputTextChange');
+    const textInput = document.getElementById('textInput');
+    textInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        showEnterInfo();
+      }
+    });
+    function showEnterInfo(){
+        window.location.href="42_error.html";
+    }
+    </script>
+</body>
+</html>

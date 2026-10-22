@@ -29,6 +29,14 @@ html{
         width:30vw;
     }
 }
+.reverseLayout{
+    display: grid;
+    grid-template-areas: "image text" "arrow arrow";
+    grid-template-columns: [first] 60% [line2] auto;
+    .serverlog{
+        width:30vw;
+    }
+}
 .nextpageArrow{
     position: relative;
     text-align:center;
@@ -65,6 +73,11 @@ background-color:rgb(180, 180, 180);
 color:black;
 text-decoration:none;
 font-size:1.5em;
+}
+.index{
+    a{
+        color:rgb(194, 174, 0);
+    }
 }
 
 /* CHARACTERS */
