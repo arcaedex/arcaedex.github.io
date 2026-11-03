@@ -7,7 +7,7 @@ html{
 /* STRUCTURE */
 
 .serverlog{
-    background-color:rgb(24, 24, 24);
+    background-color:rgb(10, 10, 10);
     padding:20px;
     
     margin:30px 20px 10px 20px;
@@ -94,28 +94,28 @@ font-size:1.5em;
 }
 .mercury{
     font-family: "Bitter", serif;
-    color:rgb(189, 112, 184);
+    color:rgb(231, 129, 234);
     
 }
 .elk{
     font-family: "Yatra One", system-ui;
-    color:rgb(202, 57, 57);
+    color:rgb(255, 59, 59);
     
 }
 .nuchal{
     font-family: "Geist Mono", monospace;
-    color:rgb(114, 124, 71);
+    color:rgb(159, 174, 76);
     
 }
 .system{
     font-family: "DotGothic16", sans-serif;
-    color:rgb(129, 129, 129);
+    color:rgb(186, 186, 186);
     font-weight:bold;
     font-size:1.1em;
 }
 .bgchar{
     font-family: Arial, sans-serif;
-    color:rgb(105, 105, 105);
+    color:rgb(163, 163, 163);
 }
 
 /* FONTS */
