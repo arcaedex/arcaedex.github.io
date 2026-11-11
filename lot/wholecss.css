@@ -31,12 +31,17 @@ html{
 }
 .reverseLayout{
     display: grid;
-    grid-template-areas: "image text" "arrow arrow";
+    grid-template-areas:
+    "image text"
+    "image text"
+    "arrow arrow";
     grid-template-columns: [first] 60% [line2] auto;
     .serverlog{
         width:30vw;
     }
 }
+
+
 .nextpageArrow{
     position: relative;
     text-align:center;
@@ -78,6 +83,7 @@ font-size:1.5em;
     a{
         color:rgb(194, 174, 0);
     }
+    font-size:1.5em;
 }
 
 /* CHARACTERS */
